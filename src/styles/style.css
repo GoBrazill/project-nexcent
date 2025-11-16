@@ -1,0 +1,820 @@
+@import url('./global.css');
+
+/*-------------- header ----------------*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 84px;
+    background-color: var(--color-neutral-silver);
+    padding: 22px 0;
+}
+
+.nav-header ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: #18191F;
+}
+
+.active {
+    font-weight: 600px;
+}
+
+.button-header {
+    display: flex;
+    gap: 14px;
+}
+
+.button-login {
+    background-color: var(--color-neutral-silver);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.button-login a {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.button-sign-up{
+    color: var(--color-neutral-white);
+    background-color: var(--color-primary);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.button-sign-up a {
+    color: var(--color-neutral-white);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*------------ Fim reader -----------*/
+
+/*-------------- main ---------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 104px;
+    padding: 96px 0;
+    margin-bottom: 40px;
+    background-color: var(--color-neutral-silver);
+}
+
+.content-lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 657px;
+}
+
+.content-lessons h1 {
+    font-size: 64px;
+    color: var(--color-neutral-d_gray);
+}
+
+.content-lessons h1 span {
+    color: var(--color-primary);
+}
+
+.content-lessons p {
+    color: var(--color-neutral-grey);
+}
+
+.content-lessons button {
+    width: 128px;
+    height: 52px;
+    margin-top: 16px;
+}
+
+/*------------ Our Clients -----------*/
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: var(--color-neutral-white);
+}
+.our-clients-content > h2 {
+    padding-bottom: 8px;
+    color: var(--color-neutral-d_gray);
+}
+.our-clients-content > p {
+    color: var(--color-neutral-grey);
+    margin-bottom: 16px;
+}
+
+.our-clients-logo {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* gap: 136px; */
+}
+
+
+/* jeito do professor */
+/* .our-clients {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+    gap: 16px;
+}
+
+.our-clients-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.our-clients-content h2 {
+    font-size: 36px;
+    color: var(--color-neutral-d_gray);
+}
+
+.our-clients-content p {
+    color: var(--color-neutral-grey);
+}
+
+/* .our-clients-logo {
+    display: flex;
+    justify-content: center;
+    gap: 136px;
+    padding: 25px 0;
+} */
+/*------------ Final Our Clients -----------*/
+
+/*------------ inicio community -----------*/
+.community {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    height: 416px;
+    margin-bottom: 16px;
+
+    background-color: var(--color-neutral-white);
+}
+
+.community h2 {
+    font-size: 36px;
+    height: 88px;
+
+    color: var(--color-neutral-d_gray);
+}
+
+.community p {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: var(--color-neutral-grey);
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.community-content h3 {
+    font-size: 28px;
+
+    color: var(--color-neutral-d_gray);
+}
+
+.community-content .card {
+    padding: 24px 32px;
+    width: 300px;
+    height: 260px;
+}
+/* jeito do professor */
+/* .manage-system {
+    width: 100%;
+    height: 416px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+.manage-system > h3{
+    font-size: 36px;
+    font-weight: 600;
+    width: 542px;
+    text-align: center;
+    color: var(--color-neutral-d_gray);
+}
+
+.manage-system > p {
+    font-size: 16px;
+    color: var(--color-neutral-grey);
+    margin-top: 8px;
+}
+
+.card-wrapper {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.card-wrapper .card {
+    width: 300px;
+    height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 32px;
+    border-radius: 8px;
+    background-color: var(--color-neutral-white);
+    box-shadow: 0px 2px 4px 0px rgba(171, 190,209 , 0.20);
+}
+
+.card > h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-neutral-d_gray);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.card > p {
+    font-size: 14px;
+    color: var(--color-neutral-grey);
+    text-align: center;
+    margin-top: 8px;
+} */
+
+/* usou br nos h3 para quebrar linha */
+/* usou box shadow */
+
+
+/*------------ final community -----------*/
+
+/*------------ inicio Pixelgrade -----------*/
+
+.pixelgrade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 433px;
+    margin-bottom: 48px;
+}
+
+.pixelgrade-content {
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    height: 268px;
+}
+
+.pixelgrade-content h2 {
+    font-size: 36px;
+    color: var(--color-neutral-d_gray);
+    width: 600px;
+    padding-bottom: 16px;
+}
+
+.pixelgrade-content p {
+    font-size: 14px;
+    color: var(--color-neutral-grey);
+    padding-bottom: 32px;
+}
+
+.pixelgrade-content > button {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 150px;
+    height: 52px;
+}
+
+/*------------ final Pixelgrade -----------*/
+/*------------ inicio helping-business -----------*/
+
+.helping-business {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    width: 100%;
+    height: 290px;
+
+    background-color: var(--color-neutral-silver);
+}
+
+
+.helping-business-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 540px;
+}
+
+.helping-business-left > h2{
+    font-size: 36px;
+    color: var(--color-neutral-d_gray);
+}
+
+.helping-business-left > h2 > span{
+    color: var(--color-primary);
+}
+
+.helping-business-left > p{
+    font-size: 16px;
+    color: var(--color-neutral-grey);
+}
+
+.helping-business-right {
+    display: grid;
+    grid-template-columns: 255px 255px; 
+    column-gap: 30px;
+    row-gap: 40px;
+
+}
+
+.helping-business-right > img {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+/*------------ final helping-business -----------*/
+
+/*------------ inicio design -----------*/
+
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 433px;
+    margin-bottom: 48px;
+}
+
+.design-content {
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    height: 268px;
+}
+
+.design-content h2 {
+    font-size: 36px;
+    color: var(--color-neutral-d_gray);
+    width: 601px;
+    padding-bottom: 16px;
+}
+
+.design-content p {
+    font-size: 14px;
+    color: var(--color-neutral-grey);
+    padding-bottom: 32px;
+}
+
+.design-content > button {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    width: 150px;
+    height: 50px;
+}
+
+/*------------ final design -----------*/
+
+/*------------ inicio tim -----------*/
+
+.tim {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 390px;
+
+    background-color: var(--color-neutral-silver);
+}
+
+.tim-image-tesla > img {
+    display: flex;
+    align-self: center;
+
+    width: 326px;
+    height: 326px;
+}
+
+.tim-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 748px;
+    height: 244px;
+    margin: 32px;
+}
+
+.tim-content > p:nth-child(1) {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--color-neutral-grey);
+}
+
+.tim-content > p:nth-child(2) {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    
+    color: var(--color-primary);
+}
+
+
+.tim-content > p:nth-child(3) {
+    font-size: 16px;
+    padding-bottom: 32px;
+
+    color: var(--color-neutral-l_grey);
+}
+
+.tim-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.tim-costumers {
+    display: flex;
+    gap: 41px;
+}
+
+.tim-meet {
+    display: flex;
+}
+
+.tim-meet > button {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    padding-right: 8px;
+
+    color: var(--color-primary);
+}
+
+/*------------ final tim -----------*/
+/*------------ inicio caring -----------*/
+
+.caring-marketing {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 506px;
+    margin-bottom: 38.6px;
+}
+
+.caring-marketing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caring-marketing-text > p {
+    color: var(--color-neutral-grey);
+    width: 628px;
+    text-align: center;
+}
+
+.caring-marketing-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.caring-cards {
+    width: 368px;
+    position: relative;
+}
+
+.caring-cards-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px;
+    color: rgba(171, 190, 209, 0.40);
+    width: 317px;
+    position: absolute;
+    top: 190px;
+    left: 25.5px;
+    background-color: var(--color-neutral-silver);
+}
+
+.caring-cards-content > p {
+    font-size: 20px;
+    color: var(--color-neutral-grey);
+    font-weight: 600;
+}
+
+.caring-cards-content > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+/*------------ final caring -----------*/
+/*------------ inicio demo -----------*/
+
+.demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    height: 300px;
+    margin-bottom: 32px;
+
+    background-color: var(--color-neutral-silver);
+}
+
+.demo > h2 {
+    font-size: 64px;
+    width: 860px;
+    height: 152px;
+    margin: 32px 0;
+}
+
+.demo > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 178px;
+    height: 52px;
+    border-radius: 4px;
+    font-size: 16px;
+    gap: 8px;
+    cursor: pointer;
+
+    color: var(--color-neutral-white);
+    background-color: var(--color-primary);
+}
+
+
+/*------------ final demo -----------*/
+
+/*------------ inicio footer -----------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 328px;
+    gap: 125px;
+    padding: 64px 165px;
+
+    background-color: var(--color-neutral-black);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.footer-left > img {
+    width: 191px;
+    height: 29.67px;
+}
+
+.footer-left > nav {
+    display: flex;
+    gap: 16px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-size: 14px;
+    color: var(--color-neutral-silver);
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-footer {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-footer nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-footer h2 {
+    font-size: 20px;
+    padding-bottom: 24px;
+    color: var(--color-neutral-white);
+}
+
+.nav-footer a {
+    font-size: 14px;
+    padding-bottom: 12px;
+    color: var(--color-neutral-silver);
+}
+
+.footer-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-email > h2 {
+    font-size: 20px;
+    color: var(--color-neutral-white);
+}
+
+.background-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+    height: 40px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    outline: none;
+
+    background-color: #515B60;
+}
+
+
+/*------------ final nexcent-footer -----------*/
+
+
+/*------------ inicio footer -----------*/
+/* jeito  do professor */
+
+/* footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-neutral-black);
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer p {
+    color: var(--color-neutral-silver);
+    font-size: 14px;
+}
+
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    
+}
+
+.icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 7.47px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-container:hover {
+    transform: translateY(-10px);
+    background-color: rgb(255, 255, 255);
+}
+
+.icon-container:hover img {
+    filter: invert(1);
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 98px;
+    
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer h2 {
+    font-size: 20px;
+    color: var(--color-neutral-white);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: var(--color-neutral-white);
+    transition: 0.3s;
+}
+
+.footer-item:hover {
+    color: var(--color-primary);
+}
+
+.footer-links li {
+    transition: 0.3s;
+}
+
+.footer-links li:hover {
+    transform: translateX(3px);
+}
+
+.footer-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section input {
+    padding: 10px 12px;
+    color: var(--color-neutral-white);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.footer-section button {
+    display: flex;
+    align-items: center;
+    padding: 8.7px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-section button:hover {
+    background-color: var(--color-primary);
+} */
+
+/*------------ final footer -----------*/
